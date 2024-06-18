@@ -12,7 +12,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import java.sql.SQLOutput;
 import java.time.LocalDate;
 
-//comments
+
 @SpringBootApplication
 public class GradeSubmissionApplication implements CommandLineRunner {
 	@Autowired
