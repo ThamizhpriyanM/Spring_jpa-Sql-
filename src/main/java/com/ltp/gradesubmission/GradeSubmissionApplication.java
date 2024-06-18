@@ -9,6 +9,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import java.sql.SQLOutput;
 import java.time.LocalDate;
 
 @SpringBootApplication
@@ -32,7 +33,7 @@ public class GradeSubmissionApplication implements CommandLineRunner {
 		for(int i=0;i< students.length;i++){
 			studentRepository.save(students[i]);
 		}
-
+		System.out.println("hi");
 		Course[] courses = new Course[] {
 				new Course("Charms", "CH104", "In this class, you will learn spells concerned with giving an object new and unexpected properties."),
 				new Course("Defence Against the Dark Arts", "DADA", "In this class, you will learn defensive techniques against the dark arts."),
